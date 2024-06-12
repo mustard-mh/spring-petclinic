@@ -20,3 +20,6 @@ jetbrains:
       - com.haulmont.jpab
     prebuilds:
       version: both
+  pycharm:
+    prebuilds:
+      version: both

@@ -1,9 +1,10 @@
 image: gitpod/workspace-full
 
 tasks:
-  - init: ./mvnw clean install -U -DskipTests
+  - init: ./mvnw clean install -U -DskipTests ; gp sync-done dep
     command: ./mvnw spring-boot:run
     name: Run PetClinic app
+  - init: gp sync-await dep ; JETBRAINS_BACKEND_QUALIFIER=stable /ide-desktop/jb-launcher warmup intellij
 
 ports:
   - port: 8080

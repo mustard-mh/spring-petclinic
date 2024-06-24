@@ -16,8 +16,11 @@ vscode:
 
 jetbrains:
   webstorm:
-    prebuilds: stable
+    prebuilds: 
+      version: stable
   golang:
-    prebuilds: latest
+    prebuilds: 
+      version: latest
   intellij:
-    prebuilds: stable
+    prebuilds: 
+      version: stable

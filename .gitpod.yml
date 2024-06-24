@@ -15,8 +15,11 @@ vscode:
     - vscjava.vscode-java-pack
 
 jetbrains:
+  webstorm:
+    prebuilds: stable
+  golang:
+    prebuilds: latest
   intellij:
-    plugins:
-      - com.haulmont.jpab
-    prebuilds:
-      version: both
+    prebuilds: stable
+  not_found:
+    prebuilds: both

@@ -5,6 +5,7 @@ tasks:
     command: ./mvnw spring-boot:run
     name: Run PetClinic app
 
+
 ports:
   - port: 8080
     onOpen: open-preview

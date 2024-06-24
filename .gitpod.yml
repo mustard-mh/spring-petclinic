@@ -21,3 +21,5 @@ jetbrains:
     prebuilds: latest
   intellij:
     prebuilds: stable
+  not_found:
+    prebuilds: both

@@ -4,6 +4,8 @@ tasks:
   - init: ./mvnw clean install -U -DskipTests
     command: ./mvnw spring-boot:run
     name: Run PetClinic app
+  - name: List Env
+    init: env
 
 ports:
   - port: 8080
@@ -19,4 +21,4 @@ jetbrains:
     plugins:
       - com.haulmont.jpab
     prebuilds:
-      version: both
+      version: stable

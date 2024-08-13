@@ -4,6 +4,9 @@ tasks:
   - init: echo "this is `init`"
     command: echo "this is `command`"
     name: Task name
+  - init: echo "hello"
+    command: echo "world"
+    name: Task 2
 
 ports:
   - port: 8080

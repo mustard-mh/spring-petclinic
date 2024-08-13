@@ -7,6 +7,9 @@ tasks:
   - init: echo "hello"
     command: echo "world"
     name: Task 2
+  - init: echo "foo"
+    command: echo "boo"
+    name: Task 3
 
 ports:
   - port: 8080

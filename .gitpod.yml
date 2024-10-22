@@ -4,6 +4,15 @@ tasks:
   - init: ./mvnw clean install -U -DskipTests
     command: ./mvnw spring-boot:run
     name: Run PetClinic app
+  - init: |
+      # disable Gradle auto-reload in IntelliJ
+      xmlstarlet ed --inplace -u '//option[@name="autoReloadType"]/@value' -v 'NONE' .idea/workspace.xml
+      # run standard gradle build
+      ./gradlew localDistro
+    command: |
+      # re-enable Gradle auto-reload in IntelliJ
+      # xmlstarlet ed --inplace -u '//option[@name="autoReloadType"]/@value' -v 'SELECTIVE' .idea/workspace.xml
+
 
 ports:
   - port: 8080
